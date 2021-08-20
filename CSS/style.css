@@ -41,6 +41,7 @@ a.myLink {
   text-decoration-line: none;
   padding-bottom: 12px;
   font-weight: 600;
+  font-size: large;
 }
 
 a.myLink:hover {
@@ -57,41 +58,89 @@ a.myLink:hover {
   padding-bottom: 12px;
 }
 
-@media only screen and (max-width: 991px) {
-.menu li a:hover {
-    border: none;
-  }
-}
-
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 767px) {
 .menu li a:link {
-    border: none;
+  border: none; 
+  font-size: smaller;
   }
-}
-
-@media only screen and (max-width: 991px) {
+.menu li a:hover {
+  border: none;
+  }
 .menu ul {
     width: 30%;
     background-color: rgba(255,182,193,0.1);
   }
-}
-
-@media only screen and (max-width: 991px) {
 .menu li {
-    line-height: 40px;
-    border-bottom: 1px solid darkblue;
-    margin-right: 0px !important;
+  line-height: 40px;
+  border-bottom: 1px solid darkblue;
+  margin-right: 0px !important;
   }
-}
-
-@media only screen and (max-width: 991px) {
 .except {
-    border-bottom: none !important;
+  border-bottom: none !important;
+  }
+.greeting3 p {
+  max-width: 250px !important;
+  }
+.greeting1 {
+  max-width: 250px;
   }
 }
 
+@media screen and (max-width: 540px){
+h3 {
+    font-size: 16px;
+    line-height: 21px;
+  }
+.navbar-brand {
+  font-size: 16px !important;
+}
+.myLink a {
+  font-size: 16px;
+}
+p {
+  font-size: 14px;
+  }
+}
+
+.greeting3 p {
+  max-width: 400px;
+  }
+
+
+
+
+.align-items-center {
+  align-items: center !important;
+}
+
+.Navbar1 {
+  border-bottom: 1px solid navajowhite;
+}
 
 .navbar-toggler {
   border: none;
 }
 
+.navbar-brand {
+  font-size: x-large;
+}
+
+.background-top {
+  position: relative;
+  background-image: url("../img/background2.jpg");
+  background-repeat:no-repeat;
+  background-size:100% 100vh;
+}
+
+.greeting {
+  height: 90vh;
+}
+
+
+@/*media screen and (max-width: 600px) {}
+@media screen and (min-width: 600px) {}
+@media screen and (min-width: 768px) {
+
+}
+@media screen (min-width: 992px) {}
+@media screen (min-width: 1200px) {}*/
