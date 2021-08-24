@@ -47,7 +47,7 @@
 
 
 .background-top2 {
-  background-image: url("/img/foot_background.jpg");
+  background-image: url("img/foot_background.jpg");
   background-repeat:no-repeat;
   background-size:100% 100vh;
   border-bottom: 2px solid rgba(250, 235, 215, 0.3);
@@ -196,7 +196,7 @@ a.myLink:hover {
 
 .background-top {
   position: relative;
-  background-image: url("/img/background2.jpg");
+  background-image: url("img/background2.jpg");
   background-repeat:no-repeat;
   background-size:100% 100vh;
   width: 100vw;
@@ -209,7 +209,7 @@ a.myLink:hover {
 
 
 .foot {
-  background-image: url(/img/foot_background.jpg);
+  background-image: url(img/foot_background.jpg);
   background-size: 100% 100vw;
   text-align:  center ;
   padding: 7%;
@@ -297,18 +297,3 @@ a.myLink:hover {
 .pro-des a {
   text-decoration-line: none !important;
 }
-/*.project2 {
-  background-image: url(../img/empyrean-gold.png);
-  height: 50vh;
-  background-size: cover;
-}*/
-
-
-
-@/*media screen and (max-width: 600px) {}
-@media screen and (min-width: 600px) {}
-@media screen and (min-width: 768px) {
-
-}
-@media screen (min-width: 992px) {}
-@media screen (min-width: 1200px) {}*/
