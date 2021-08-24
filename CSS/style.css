@@ -1,7 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.myLink, .menu, .except, .greeting, .greeting3, .greeting1, .image, .about-text, .pro-des, 
+.hovering, .about-text, .text, .aboutme-pic, .num, .num1, .active, .headings, .contact, .middle-text {
+  font-family: "Montserrat", sans-serif !important;
 }
 
 
@@ -38,8 +45,9 @@
   display: inline-block;
 }
 
-.background-top1 {
-  background-image: url("../img/background2.jpg");
+
+.background-top2 {
+  background-image: url("../img/foot_background.jpg");
   background-repeat:no-repeat;
   background-size:100% 100vh;
   border-bottom: 2px solid rgba(250, 235, 215, 0.3);
@@ -50,7 +58,7 @@ a.myLink {
   color: black;
   text-decoration-line: none;
   padding-bottom: 8px;
-  font-weight: 600;
+  font-weight: 600 !important;
   font-size: large;
 }
 
@@ -105,9 +113,60 @@ a.myLink:hover {
 .foot {
   padding: 15% !important;
 }
+.about-text {
+  max-width: 280px !important;
+  font-size: 16px !important;
+}
+.aboutme-pic {
+  width: 100%;
+}
+.zoom1 {
+  font-size: 40px !important;
+  padding: 20px !important;
+}
+.image {
+  width: 100% !important;
+}
+.pro-des {
+  font-size: 16px !important;
+  }
 }
 
-/*set z index to 9 if you want navbar button to scroll with the page*/
+@media only screen and (max-width: 991px) {
+  .menu li a:link {
+  border: none; 
+  font-size: smaller;
+  }
+.menu li a:hover {
+  border: none;
+  }
+.menu ul {
+    width: 30%;
+    background-color: rgba(255,182,193,0.1);
+  }
+.menu li {
+  line-height: 40px;
+  border-bottom: 1px solid darkblue;
+  margin-right: 0px !important;
+  }
+.except {
+  border-bottom: none !important;
+  }
+  .zoom1 {
+  font-size: 40px !important;
+  padding: 20px !important;
+}
+}
+
+@media only screen and (max-width: 700px){
+.text {
+  background-color: blueviolet;
+  color: white;
+  font-size: 8px !important;
+  padding: 6px 13px !important;
+  border-radius: 40% !important;
+}
+}
 
 .greeting3 {
   max-width: 400px;
@@ -132,7 +191,7 @@ a.myLink:hover {
 }
 
 .navbar-brand {
-  font-size: x-large;
+  font-size: x-large !important;
 }
 
 .background-top {
@@ -140,10 +199,12 @@ a.myLink:hover {
   background-image: url("../img/background2.jpg");
   background-repeat:no-repeat;
   background-size:100% 100vh;
+  width: 100vw;
 }
 
 .image {
-  width: 50%;
+  width: 100%;
+  height: 100%;
 }
 
 
@@ -163,7 +224,79 @@ a.myLink:hover {
 }
 
 
+.about-text {
+  max-width:  400px;
+}
 
+.aboutme-pic {
+  display: block;
+  border-radius: 30%;
+}
+
+.zoom1 {
+  padding: 60px;
+  color: black;
+}
+
+.zoom1:hover {
+  transform: scale(1.5);
+}
+
+.contact {
+  height: 100vh;
+}
+
+.num {
+  text-decoration-line: none !important;
+}
+
+.num1 {
+  color: black;
+}
+
+.hovering {
+  position: relative;
+}
+
+.middle-text {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: left;
+}
+
+
+.hovering:hover .image {
+  opacity: 0.3;
+}
+
+.hovering:hover .middle-text {
+  opacity: 1;
+}
+
+.text {
+  background-color: blueviolet;
+  color: white;
+  font-size: 14px;
+  padding: 12px 25px;
+  border-radius: 40%;
+}
+
+.hovering a {
+  text-decoration-line: none !important;
+}
+
+.pro-des {
+  font-size: 20px;
+  }
+
+.pro-des a {
+  text-decoration-line: none !important;
+}
 /*.project2 {
   background-image: url(../img/empyrean-gold.png);
   height: 50vh;
