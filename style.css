@@ -209,7 +209,7 @@ a.myLink:hover {
 
 
 .foot {
-  background-image: url(img/foot_background.jpg);
+  background-image: url("img/foot_background.jpg");
   background-size: 100% 100vw;
   text-align:  center ;
   padding: 7%;
